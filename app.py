@@ -3,6 +3,7 @@ from intro import intro
 from create import create
 from display import display
 from delete_todo import delete_todo
+from completed_tasks import completed
 
 def app():
     runApp = True
@@ -31,7 +32,8 @@ def app():
                 delete_todo()
                 sleep(1)
             case 4:
-                create()
+                completed()
+                sleep(1)
             case 5:
                 print("")
                 print("Thank you for using this app!")

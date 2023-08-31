@@ -1,6 +1,8 @@
 from display import display
 import create
 
+deleted_items = []
+
 def delete_todo():
     # Check if list is empty
     if len(create.todos) == 0:
@@ -30,6 +32,11 @@ def delete_todo():
         
         return
     item = create.todos[num - 1]
+    deleted_items.append(item)
     create.todos.remove(item)
-    print("To-do updated successfully!")
     print("")
+    print(f"To-do updated successfully! '{item}' deleted")
+    print("")
+    print("Redirecting back to Main Menu")
+    print("")
+
