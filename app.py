@@ -43,11 +43,6 @@ def app():
             case _:
                 print("")
                 print("Invalid input!")
-                sleep(.2)
                 print("")
-                print("")
-                print("            Program shutting down...")
-                print("")
-                print("")
-                sleep(2)
+                sleep(1)
 app()
